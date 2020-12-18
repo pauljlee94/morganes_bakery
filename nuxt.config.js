@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Morgane A. Laine',
+    title: 'Lainé Bakery',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -43,14 +43,17 @@ export default {
     'nuxt-webfontloader',
   ],
   prismic: {
-    endpoint: "https://morgane.cdn.prismic.io/api/v2",
+    endpoint: "https://morganebakery.cdn.prismic.io/api/v2",
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer'
   },
 
   webfontloader: {
     google: {
-      families: ['Raleway:400,600,700']
+      families: [
+        'raleway:400,700',
+        'Shadows Into Light:400',
+      ]
     }
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
